@@ -1,9 +1,15 @@
 <template>
+  <Header></Header>
   <router-view />
 </template>
 
 <script>
-export default {};
+import Header from "./components/Header";
+export default {
+  components: {
+    Header,
+  },
+};
 </script>
 
 <style lang="scss">
