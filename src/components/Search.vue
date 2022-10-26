@@ -56,8 +56,13 @@ export default {
     };
   },
   methods: {
-    apply() {
-      console.log("굳굳");
+    async apply() {
+      this.$store.dispatch("movie/searchMovies", {
+        title: this.title,
+        type: this.type,
+        number: this.number,
+        year: this.year,
+      });
     },
   },
 };
